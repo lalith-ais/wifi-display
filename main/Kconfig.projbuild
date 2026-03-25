@@ -1,0 +1,29 @@
+menu "WiFi Configuration"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            WiFi network name to connect to.
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi network password.
+
+    config WIFI_MAX_RETRY
+        int "Maximum connection retries"
+        default 5
+        range 1 10
+        help
+            Number of connection attempts before restart.
+
+    config HOSTED_TRANSPORT
+        int "Hosted transport type"
+        default 0
+        range 0 2
+        help
+            0: SPI, 1: SDIO, 2: UART
+
+endmenu

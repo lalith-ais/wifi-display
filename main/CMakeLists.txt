@@ -1,0 +1,23 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "supervisor.c"
+        "system.c"
+        "wifi_service.c"
+        "wifi_setup.c"
+        "gt911_service.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        nvs_flash
+        esp_netif
+        esp_event
+        esp_wifi
+        esp_wifi_remote
+        esp_hosted
+        esp_timer
+        driver
+        esp_lcd
+        esp_lcd_touch
+        esp_lcd_touch_gt911
+)
