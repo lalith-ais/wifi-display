@@ -5,7 +5,6 @@ idf_component_register(
         "system.c"
         "wifi_service.c"
         "wifi_setup.c"
-        "gt911_service.c"
     INCLUDE_DIRS
         "."
     REQUIRES
@@ -17,7 +16,4 @@ idf_component_register(
         esp_hosted
         esp_timer
         driver
-        esp_lcd
-        esp_lcd_touch
-        esp_lcd_touch_gt911
 )

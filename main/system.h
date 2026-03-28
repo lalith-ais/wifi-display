@@ -8,7 +8,6 @@ extern "C" {
 #endif
 
 void wifi_supervisor(void *arg);
-void gt911_supervisor(void *arg);
 
 extern const service_def_t services[];
 
