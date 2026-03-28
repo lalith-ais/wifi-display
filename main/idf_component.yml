@@ -1,5 +1,4 @@
 dependencies:
-
   espressif/esp_wifi_remote:
     version: ">=0.10,<2.0"
     rules:

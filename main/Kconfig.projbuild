@@ -19,11 +19,4 @@ menu "WiFi Configuration"
         help
             Number of connection attempts before restart.
 
-    config HOSTED_TRANSPORT
-        int "Hosted transport type"
-        default 0
-        range 0 2
-        help
-            0: SPI, 1: SDIO, 2: UART
-
 endmenu
